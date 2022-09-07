@@ -22,7 +22,6 @@ body{
 }
 
 .searcher-container{
-    border: 1px solid black;
     grid-column:2/6;
     grid-row:1/2;
     background-color:white;
@@ -66,10 +65,54 @@ i.fa-regular.fa-bell, i.fa-solid.fa-magnifying-glass{
 }
 
 .header{
-    border: 1px solid black;
     grid-column:2/6;
     grid-row:2/3;
     background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px 30px 60px;
+}
+
+.header .profile-avatar{
+    height: 100px;
+    width: auto;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-message{
+    display: grid;
+    gap: 10px;
+}
+
+.greetings {
+    font-size: 1rem;
+}
+
+.contact{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    gap:40px;
+}
+
+.buttons button {
+    width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: #2d9bd7;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .content-container{
